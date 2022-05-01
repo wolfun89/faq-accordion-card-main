@@ -1,0 +1,246 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+html body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), color-stop(#9f67e9), color-stop(#8d66e9), color-stop(#7a66e8), to(#6565e7)) fixed no-repeat;
+  background: linear-gradient(to bottom, #af67e9, #9f67e9, #8d66e9, #7a66e8, #6565e7) fixed no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+html body .container {
+  font-family: 'Kumbh Sans', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 65vh;
+  width: clamp(60vw, 90vw, 90vw);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+html body .container .container-img .container-img-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body .container .container-img .container-img-mobile img {
+  position: absolute;
+}
+
+html body .container .container-img .container-img-mobile img:first-child {
+  width: clamp(45vw, 65vw, 85vw);
+  bottom: 21vh;
+  left: 6vw;
+}
+
+html body .container .container-img .container-img-mobile img:nth-child(2) {
+  width: clamp(40vw, 60vw, 80vw);
+  bottom: 19vh;
+  left: 11.5vw;
+}
+
+html body .container .container-img-desktop {
+  display: none;
+}
+
+html body .container-content {
+  -webkit-box-shadow: 0px 10px 50px -20px #4a4b5e;
+          box-shadow: 0px 10px 50px -20px #4a4b5e;
+  background-color: white;
+  padding: 17vh 7vw 5vh;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+html body .container-content h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 9vw;
+  margin-bottom: 2.5vh;
+  color: #1d1e35;
+}
+
+html body .container-content .question-box .accordion {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: transparent;
+  width: 100%;
+  border: 0;
+  font-size: 12px;
+  text-align: start;
+  color: #4a4b5e;
+  padding: 1.5vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+html body .container-content .question-box .accordion span {
+  width: 100%;
+}
+
+html body .container-content .question-box .accordion:focus {
+  font-weight: bold;
+}
+
+html body .container-content .question-box .accordion:hover {
+  color: #f47c57;
+}
+
+html body .container-content .question-box .accordion .arrow {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body .container-content .question-box .accordion.active > .arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+html body .container-content .question-box .answer {
+  display: none;
+  color: #787887;
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+
+html body .container-content .lines {
+  border: 0;
+  border-top: 1px solid #787887;
+}
+
+@media screen and (min-width: 375px) {
+  html body {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html body .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  html body .container .container-img .container-img-mobile {
+    display: none;
+  }
+  html body .container .container-img .container-img-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  html body .container .container-img .container-img-desktop img {
+    position: relative;
+  }
+  html body .container .container-img .container-img-desktop img:nth-of-type(1) {
+    display: none;
+  }
+  html body .container .container-img .container-img-desktop img:nth-of-type(2) {
+    display: inline-block;
+    position: absolute;
+    width: 12vw;
+    top: 45vh;
+    left: 11.5vw;
+  }
+  html body .container .container-img .container-img-desktop img:nth-of-type(3) {
+    display: none;
+  }
+  html body .container .container-content {
+    background-image: url(../images/illustration-woman-online-desktop.svg), url(../images/bg-pattern-desktop.svg);
+    background-position: -5vw center,-32vw -32vh;
+    background-size: 28vw,55vw;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 60vw;
+    padding: 8vh 7vw 8vh 30vw;
+  }
+  html body .container .container-content h1 {
+    width: 20vw;
+    font-size: 30px;
+    text-align: start;
+    margin: 2.5vh 0;
+  }
+  html body .container .container-content .question-box .accordion {
+    padding: 2.2vh 0;
+  }
+  html body .container .container-content .question-box .accordion p {
+    font-size: 12px;
+  }
+  html body .container .container-content .question-box .accordion .arrow {
+    margin-right: 1vw;
+  }
+  html body .container .container-content .question-box .answer {
+    margin-right: 0.5vw;
+  }
+}
+/*# sourceMappingURL=app.css.map */
